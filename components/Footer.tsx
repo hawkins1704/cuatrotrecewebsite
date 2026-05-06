@@ -13,7 +13,7 @@ export default function Footer() {
             className="h-11 md:h-[3.75rem] w-auto max-w-[min(100%,17rem)] object-contain"
           />
         </div>
-        <p className="text-sm opacity-60">© {new Date().getFullYear()} CUATRO TRECE · Agencia de Crecimiento Digital</p>
+        <p className="text-sm opacity-60">© {new Date().getFullYear()} CUATROTRECE · Agencia de Crecimiento Digital</p>
         <p className="text-sm italic opacity-60">"Todo lo puedo en Cristo que me fortalece" — Filipenses 4:13</p>
       </div>
     </footer>

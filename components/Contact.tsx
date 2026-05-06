@@ -8,8 +8,8 @@ export default function Contact() {
 
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `Hola Digital Team!%0A%0ANombre: ${form.name}%0AEmail: ${form.email}%0AEmpresa: ${form.company}%0A%0A${form.message}`;
-    window.open(`https://wa.me/51999999999?text=${text}`, "_blank");
+    const text = `Hola CUATROTRECE!%0A%0ANombre: ${form.name}%0AEmail: ${form.email}%0AEmpresa: ${form.company}%0A%0A${form.message}`;
+    window.open(`https://wa.me/51992095138?text=${text}`, "_blank");
     setSent(true);
   };
 
@@ -70,14 +70,14 @@ export default function Contact() {
           <div className="space-y-10">
             <div>
               <p className="text-xs font-mono uppercase tracking-widest opacity-60 mb-2">Escríbenos</p>
-              <a href="mailto:digitalteam@gmail.com" className="display text-3xl md:text-5xl hover:text-flame transition-colors break-all">
-                digitalteam@gmail.com
+              <a href="mailto:holacuatrotrece@gmail.com" className="display text-xl md:text-3xl hover:text-flame transition-colors break-all">
+                holacuatrotrece@gmail.com
               </a>
             </div>
             <div>
               <p className="text-xs font-mono uppercase tracking-widest opacity-60 mb-2">WhatsApp</p>
-              <a href="https://wa.me/51999999999" target="_blank" className="display text-3xl md:text-5xl hover:text-flame transition-colors">
-                +51 999 999 999
+              <a href="https://wa.me/51992095138" target="_blank" className="display text-xl md:text-3xl hover:text-flame transition-colors">
+                +51 992 095 138
               </a>
             </div>
             <div className="pt-6 border-t border-ink/15 text-sm opacity-70 max-w-md">

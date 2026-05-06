@@ -49,8 +49,7 @@ export default function Hero() {
           className="mt-10 grid md:grid-cols-3 gap-8 items-end"
         >
           <p className="md:col-span-2 text-lg md:text-xl max-w-2xl text-black">
-            Somos CUATROTRECE y nosotros: <br/> No hacemos marketing por hacer. Trazamos estrategias de SEO, Paid Media y
-            Social Media diseñadas para una sola cosa: <span className="text-ink font-bold uppercase">hacer crecer tu negocio</span>.
+           Somos CUATROTRECE, una agencia de crecimiento digital. Ayudamos a negocios a conseguir más clientes y ventas a través de servicios digitales como: SEO, Google Ads y Growth Marketing. 
           </p>
           <div className="flex flex-col gap-3">
             <a href="#contacto" className="inline-flex items-center justify-between bg-ink text-bone px-6 py-4 rounded-full font-semibold hover:bg-flame transition-colors">

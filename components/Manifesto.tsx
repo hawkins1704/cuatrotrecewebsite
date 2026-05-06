@@ -4,9 +4,9 @@ import { useRef } from "react";
 
 const lines = [
   ["NO", "somos una agencia de marketing tradicional."],
-  ["NO", "vendemos servicios sueltos por vender."],
-  ["SÍ", "obsesionados con resultados medibles."],
-  ["SÍ", "tu crecimiento es nuestra única métrica."],
+  ["NO", "ofrecemos servicios por ofrecerlos."],
+  ["SÍ", "nos basamos en datos y resultados."],
+  ["SÍ", "tenemos el objetivo claro: Tu crecimiento"],
 ];
 
 export default function Manifesto() {
@@ -56,7 +56,7 @@ export default function Manifesto() {
           className="mt-16 max-w-2xl text-lg text-ink/70"
         >
           Usamos los servicios digitales como herramientas. El objetivo siempre es el mismo:
-          <span className="text-ink font-semibold"> más leads, más ventas, más clientes.</span>
+          <span className="text-ink font-semibold"> más leads → más clientes → más ventas.</span>
         </motion.p>
       </div>
     </section>

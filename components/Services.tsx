@@ -6,8 +6,8 @@ const services = [
     n: "01",
     cat: "Estrategia",
     title: "Growth Marketing",
-    desc: "Diseñamos un plan de crecimiento end-to-end: del primer clic al cliente recurrente. Hipótesis, experimentos, métricas que importan.",
-    bullets: ["Análisis de producto y objetivos", "Funnel de conversión", "Experimentación continua", "KPIs accionables"],
+    desc: "Diseñamos un plan de crecimiento de inicio a fin: desde primer clic hasta la fidelización del cliente. Análisis, experimentos y métricas que importan.",
+    bullets: ["Análisis de producto y objetivos", "Funnel de conversión", "Experimentación continua", "Indicadores claves"],
     bg: "bg-ink", fg: "text-bone",
     border: "border-bone",
   },
@@ -16,7 +16,7 @@ const services = [
     cat: "SEO",
     title: "Posicionamiento Orgánico",
     desc: "Que Google te encuentre primero. SEO técnico, contenidos y autoridad para ganar tráfico que compra.",
-    bullets: ["Auditoría técnica", "Keyword research", "Contenidos optimizados", "Link building"],
+    bullets: ["Auditoría técnica", "Keyword research", "Contenidos optimizados", "Posicionamiento en Google"],
     bg: "bg-bone", fg: "text-ink",
     border: "border-ink",
   },
@@ -74,14 +74,14 @@ export default function Services() {
               <div className="h-full grid md:grid-cols-2 gap-8 p-8 md:p-16">
                 <div className="flex flex-col justify-start">
                   <div className="flex items-center gap-4 text-xs font-mono uppercase tracking-widest opacity-60">
-                    <span>{s.n} / 04</span>
+                    <span>{s.n} / 03</span>
                     <span className="w-6 h-px bg-current" />
                     {s.cat}
                   </div>
                   <h3 className="display my-4 text-3xl md:text-6xl lg:text-7xl">{s.title}</h3>
                   <a
                     href="#contacto"
-                    className={`inline-flex w-fit items-center gap-3 border ${s.border} border-current/30 hover:bg-current px-5 py-3 rounded-full text-sm font-semibold transition-colors ${s.fg === "text-bone" ? "text-bone hover:text-ink hover:bg-bone" : "text-ink hover:text-bone hover:bg-ink"}`}
+                    className={`inline-flex w-fit items-center gap-3 border ${s.border} border-current/30  px-5 py-3 rounded-full text-sm font-semibold transition-colors ${s.fg === "text-bone" ? "text-bone hover:text-ink hover:bg-bone" : "text-ink hover:text-bone hover:bg-ink"}`}
                   >
                     Hablemos de esto →
                   </a>

@@ -13,9 +13,9 @@ const sans = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "CUATRO TRECE — Agencia de Crecimiento Digital",
+  title: "CUATROTRECE — Agencia de Crecimiento Digital",
   description:
-    "No somos una agencia tradicional. Convertimos clics en clientes. SEO, Paid Media y Social Media con foco en resultados medibles.",
+    "Somos una agencia de crecimiento digital que nos encargamos de que tu negocio crezca usando servicios digitales como SEO, Google Ads acompañados de Growth Marketing.",
 };
 
 export default function RootLayout({
