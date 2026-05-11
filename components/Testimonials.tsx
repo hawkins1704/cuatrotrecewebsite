@@ -204,7 +204,7 @@ function InteractiveTestimonialCard({
             width={160}
             height={70}
             unoptimized
-            className="h-16 w-auto max-w-[8rem] object-contain object-left rounded-md grayscale"
+            className="h-16 w-auto max-w-[8rem] object-contain object-left rounded-md"
           />
         ) : (
           <div
