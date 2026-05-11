@@ -1,10 +1,25 @@
 "use client";
 import { useEffect, useRef } from "react";
 
+/** Sin cursor custom en táctil, viewport estrecho o teléfono en horizontal (ancho > md pero poca altura). */
+function shouldHideCursorBlob() {
+  if (typeof window === "undefined") return true;
+  if (window.matchMedia("(pointer: coarse)").matches) return true;
+  if (window.matchMedia("(max-width: 767px)").matches) return true;
+  if (
+    navigator.maxTouchPoints > 0 &&
+    window.matchMedia("(orientation: landscape)").matches &&
+    window.matchMedia("(max-height: 520px)").matches
+  ) {
+    return true;
+  }
+  return false;
+}
+
 export default function Cursor() {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    if (window.matchMedia("(pointer: coarse)").matches) return;
+    if (shouldHideCursorBlob()) return;
     const el = ref.current;
     if (!el) return;
     el.style.display = "block";

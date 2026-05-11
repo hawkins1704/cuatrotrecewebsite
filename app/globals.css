@@ -68,6 +68,12 @@ body {
   transition: width .25s ease, height .25s ease;
 }
 
+@media (max-width: 767px), (pointer: coarse) {
+  .cursor-blob {
+    display: none !important;
+  }
+}
+
 /* Sticky tilt cards */
 .tilt {
   transition: transform .4s cubic-bezier(.2,.8,.2,1);

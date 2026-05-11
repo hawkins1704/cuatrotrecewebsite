@@ -15,6 +15,7 @@ export default function Nav() {
     ["Manifiesto", "#manifiesto"],
     ["Servicios", "#servicios"],
     ["Proceso", "#proceso"],
+    ["Testimonios", "#testimonios"],
     ["Contacto", "#contacto"],
   ];
   return (
