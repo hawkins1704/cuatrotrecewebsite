@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 const services = [
   {
@@ -43,6 +43,8 @@ const services = [
 ];
 
 export default function Services() {
+  const prefersReducedMotion = useReducedMotion() === true;
+
   return (
     <section id="servicios" className="relative bg-bone">
       <div className="mx-auto max-w-7xl px-6 pt-32 pb-12">
@@ -65,9 +67,17 @@ export default function Services() {
             style={{ zIndex: i + 1 }}
           >
             <motion.div
-              initial={{ opacity: 0, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-200px" }}
+              initial={
+                prefersReducedMotion
+                  ? { opacity: 1, y: 0 }
+                  : { opacity: 0, y: 80 }
+              }
+              whileInView={
+                prefersReducedMotion ? undefined : { opacity: 1, y: 0 }
+              }
+              // Sin margin negativo: en celulares el viewport es bajo y sticky + IO
+              // pueden no registrar intersección, dejando las cards en opacity: 0.
+              viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 0.8 }}
               className={`${s.bg} ${s.fg} w-full h-[70vh] mx-4 md:mx-12 rounded-3xl border border-ink/10 shadow-2xl overflow-hidden`}
             >

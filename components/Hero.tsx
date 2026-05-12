@@ -23,14 +23,14 @@ export default function Hero() {
           Agencia de Crecimiento Digital · Lima - Perú
         </div>
 
-        <h1 className="display text-[clamp(3rem,7vw,5rem)]">
+        <h1 className="display text-[clamp(3rem,7vw,6rem)]">
           <motion.span
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
             className="block reveal-mask"
           >
-            <span className="block">Convertimos</span>
+            <span className="block">Crecimiento digital</span>
           </motion.span>
           <motion.span
             initial={{ y: "100%" }}
@@ -38,7 +38,7 @@ export default function Hero() {
             transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             className="block reveal-mask"
           >
-            <span className="block">clics en <span className="text-flame italic font-serif">clientes.</span></span>
+            <span className="block">enfocado en <span className="text-flame italic font-serif">ventas.</span></span>
           </motion.span>
         </h1>
 
