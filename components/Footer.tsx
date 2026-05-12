@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex items-center">
           <Image
             src="/images/logo-footer.png"
-            alt="Digital Team"
+            alt="CUATROTRECE — agencia de crecimiento digital"
             width={480}
             height={120}
             className="h-11 md:h-[3.75rem] w-auto max-w-[min(100%,17rem)] object-contain"

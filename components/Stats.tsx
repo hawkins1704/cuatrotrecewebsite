@@ -24,9 +24,9 @@ export default function Stats() {
   return (
     <section className="bg-ink text-bone py-28 md:py-40">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="text-md font-mono uppercase tracking-widest mb-12 flex items-center gap-3 opacity-70">
+        <h2 className="text-md font-mono uppercase tracking-widest mb-12 flex items-center gap-3 opacity-70">
           <span>(04)</span><span className="w-8 h-px bg-bone" /> Resultados
-        </div>
+        </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-6">
           {stats.map((s, i) => (
             <motion.div

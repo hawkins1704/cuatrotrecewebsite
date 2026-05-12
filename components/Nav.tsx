@@ -28,7 +28,7 @@ export default function Nav() {
         <a href="#top" className="flex items-center group">
           <Image
             src="/images/logo.jpg"
-            alt="Digital Team"
+            alt="CUATROTRECE — agencia de crecimiento digital"
             width={480}
             height={120}
             className="h-12 md:h-16 lg:h-[4.25rem] w-auto max-w-[min(100%,18rem)] object-contain group-hover:opacity-90 transition-opacity"

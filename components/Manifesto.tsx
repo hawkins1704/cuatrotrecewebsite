@@ -24,9 +24,9 @@ export default function Manifesto() {
       </motion.div>
 
       <div className="mx-auto max-w-7xl px-6 relative">
-        <div className="text-md font-mono uppercase tracking-widest mb-12 flex items-center gap-3">
+        <h2 className="text-md font-mono uppercase tracking-widest mb-12 flex items-center gap-3">
           <span>(01)</span><span className="w-8 h-px bg-ink" /> Manifiesto
-        </div>
+        </h2>
 
         <div className="space-y-2 md:space-y-4">
           {lines.map(([tag, text], i) => (

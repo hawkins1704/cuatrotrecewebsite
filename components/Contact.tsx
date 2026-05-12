@@ -18,7 +18,7 @@ export default function Contact() {
       <div className="absolute -bottom-40 -left-40 w-[60vw] h-[60vw] bg-flame rounded-full blur-3xl opacity-20 pointer-events-none" />
       <div className="mx-auto max-w-7xl px-6 relative">
         <div className="text-md font-mono uppercase tracking-widest mb-8 flex items-center gap-3">
-          <span>(05)</span><span className="w-8 h-px bg-ink" /> Contacto
+          <span>(06)</span><span className="w-8 h-px bg-ink" /> Contacto
         </div>
         <h2 className="display text-6xl md:text-[10rem] leading-[0.85]">
           Hagamos<br/>algo<br/><span className="text-flame italic font-serif">grande.</span>

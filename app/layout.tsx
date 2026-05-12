@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Archivo_Black, Inter } from "next/font/google";
+import { getSiteUrl } from "@/lib/site-url";
 import "./globals.css";
 
 const display = Archivo_Black({
@@ -12,10 +13,37 @@ const sans = Inter({
   variable: "--font-sans",
 });
 
+const siteUrl = getSiteUrl();
+
+const title = "CUATROTRECE — Agencia de Crecimiento Digital";
+const description =
+  "Somos una agencia de crecimiento digital que nos encargamos de que tu negocio crezca usando servicios digitales como SEO, Google Ads acompañados de Growth Marketing.";
+
 export const metadata: Metadata = {
-  title: "CUATROTRECE — Agencia de Crecimiento Digital",
-  description:
-    "Somos una agencia de crecimiento digital que nos encargamos de que tu negocio crezca usando servicios digitales como SEO, Google Ads acompañados de Growth Marketing.",
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title,
+    description,
+    url: "/",
+    siteName: "CUATROTRECE",
+    locale: "es_PE",
+    type: "website",
+    images: [{ url: "/images/logo.jpg", alt: "CUATROTRECE" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/images/logo.jpg"],
+  },
+  icons: {
+    icon: [{ url: "/images/favicon.jpg", type: "image/jpeg" }],
+  },
 };
 
 export default function RootLayout({
