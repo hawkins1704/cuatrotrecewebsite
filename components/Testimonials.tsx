@@ -457,7 +457,7 @@ export default function Testimonials() {
 
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="mb-12 flex items-center gap-3 font-mono text-sm uppercase tracking-widest">
-          <span>(05)</span>
+          <span>(04)</span>
           <span className="h-px w-8 bg-ink" /> Testimonios
         </div>
 
